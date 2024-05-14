@@ -54,6 +54,10 @@ delay.txt
 
 # executables
 tinifier
+Tinifier.app
+
+# Temporary files created by Fyne which we won't really need
+fyne_*.go
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Go template
