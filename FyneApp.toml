@@ -1,0 +1,8 @@
+Website = "https://github.com/GwynethLlewelyn/tinifier"
+
+[Details]
+  Icon = "assets/tinifier-logo.png"
+  Name = "Tinifier"
+  ID = "net.gwynethllewelyn.tinifier"
+  Version = "0.0.1"
+  Build = 3
