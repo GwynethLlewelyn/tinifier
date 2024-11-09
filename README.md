@@ -12,13 +12,16 @@ Licensed under a [MIT License](https://gwyneth-llewelyn.mit-license.org/).
 
 TinyPNG allows, through their nifty [Tinify API](https://tinypng.com/developers), access to a few more goodies which are not possible from the usual web-based interface — such as resizing images and compressing images bigger than the 5MB limit.
 
-In order to keep usage within reasonable limits, similar to what happens on the web page, you cannot abuse the system. And, most importantly, the API requires a unique key. Registration is free
+In order to keep usage within reasonable limits, similar to what happens on the web page, you cannot abuse the system. And, most importantly, the API requires a unique key. Registration is
+free.
 
 ## Minimalist compiling/development instructions:
 
 Most of these instructions are required to use the GUI framework [Fyne](https://fyne.io) and dealing with cross-compilation & packaging.
 
 Under Linux, Fyne seems to prefer to run under X (so you will need X-related development files) _and_
+[something extremely important to be inserted here but which I totally
+forgot about].
 
 1. Make sure you have your dependencies for Fyne (which is based on OpenGL) correctly set up:
 
@@ -40,3 +43,10 @@ Here is an example: [compiling in macOS or Linux/Debian, target is Windows 64bit
 ## Disclaimer
 
 I'm not affiliated with TinyPNG nor paid to endorse their products and/or services; I'm just a very regular user
+and an unconditional fan of their insanely advanced image compression
+algorithms!
+
+Please bear with me while I study how Fyne works. I'm still amazed at how
+much you can do with it, looking so awesome in different platforms. And yet,
+it completely falls under the radar for multiplatform development — I wonder
+why!
