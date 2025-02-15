@@ -63,12 +63,15 @@ func main() {
 			return
 		}
 		fmt.Printf("chosen: %v\n", f.URI())
-		loadFile(wMain, f, fileLength(f.URI().Path()))
-		image = canvas.NewImageFromFile(f.URI().Path()) // TODO work with library upstream to not do this
+		// loadFile(wMain, f, fileLength(f.URI().Path()))
+		image = canvas.NewImageFromURI(f.URI()) // TODO work with library upstream to not do this
+		image.FillMode = canvas.ImageFillOriginal
+		wMain.SetContent(image)
+		wMain.Show()
 	}
 
 	d := dialog.NewFileOpen(onChosen, wMain)
-	d.SetFilter(storage.NewExtensionFileFilter([]string{".jpg", ".jpeg", ".webp", "png", "avif"}))
+	d.SetFilter(storage.NewExtensionFileFilter([]string{".jpg", ".jpeg", ".webp", ".png", ".avif"}))
 	// d.Resize(fyne.NewSize(300.0, 200.0))
 	d.Show()
 
