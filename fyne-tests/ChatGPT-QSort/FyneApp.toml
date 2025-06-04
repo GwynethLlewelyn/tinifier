@@ -1,0 +1,8 @@
+Website = "https://github.com/GwynethLlewelyn/tinifier/fyne-tests/ChatGPT-QSort"
+
+[Details]
+  Icon = "../assets/QuickSort-logo.png"
+  Name = "ChatGPT "
+  ID = "net.gwynethllewelyn.tinifier"
+  Version = "0.0.1"
+  Build = 1

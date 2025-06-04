@@ -55,6 +55,7 @@ delay.txt
 # executables
 tinifier
 Tinifier.app
+*.app
 
 # Temporary files created by Fyne which we won't really need
 fyne_*.go
