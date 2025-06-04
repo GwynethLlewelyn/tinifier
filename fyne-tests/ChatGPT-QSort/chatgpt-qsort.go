@@ -1,3 +1,6 @@
+//go:generate fyne bundle -o bundled.go assets/QuickSort-logo-small.png
+//go:generate fyne bundle -o bundled.go -append assets/QuickSort-logo.png
+//go:generate fyne bundle -o bundled.go -append assets/style.css
 package main
 
 import (
@@ -28,7 +31,13 @@ var (
 func main() {
 	a := app.New()
 	w := a.NewWindow("Goroutine QuickSort Visualisation")
-	w.Resize(fyne.NewSize(800, 400))
+	w.Resize(fyne.NewSize(800.0, 400.0))
+
+	image := canvas.NewImageFromResource(resourceQuickSortLogoSmallPng)
+
+	image.SetMinSize(fyne.NewSize(800.0, 600.0))
+	image.FillMode = canvas.ImageFillOriginal
+	w.SetContent(image)
 
 	// rand.Seed(time.Now().UnixNano()) // deprecated
 	data = rand.Perm(dataSize)
